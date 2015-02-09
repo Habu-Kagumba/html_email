@@ -1,0 +1,121 @@
+// Various client fixes and reset styles.
+
+table,
+td,
+div,
+a {
+  box-sizing: border-box;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  outline: none;
+  text-decoration:none;
+  color: $navy;
+  font-weight: bold;
+}
+
+a img{
+    border: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  height: 100% !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important;
+  min-width:100%;
+}
+
+// Let's make sure all tables have defaults
+table {
+  -premailer-width: 100%; // This is a specific style for the premailer gem
+  border-collapse: separate !important;
+  mso-table-lspace:0pt;
+  mso-table-rspace: 0pt;
+
+  td {
+    vertical-align: top;
+     mso-table-lspace: 0pt;
+     mso-table-rspace: 0pt;
+  }
+
+  hr {
+    color: lighten($navy, 70%);
+  }
+}
+
+// External class fix for Outlook.com
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+.yshortcuts a {
+    border-bottom: none !important;
+}
+#outlook a {
+    padding: 0;
+}
+
+// misc styles
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+// Preheader text is displayed in certain clients as a preview but not shown when the user opens the email
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0;
+}

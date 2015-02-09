@@ -1,0 +1,37 @@
+.btn {
+  margin-bottom: 15px;
+  width: auto;
+  -premailer-width: auto; // This is a specific style for the premailer gem
+
+  td {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  a{
+    background-color: #fff;
+    border: solid 1px $crimson;
+    color: $crimson;
+    cursor: pointer;
+    display: inline-block;
+    @include font-size(14px);
+    font-weight: 400;
+    margin: 0;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+.btn-primary {
+
+  td {
+    background-color: $crimson;
+  }
+
+  a{
+    background-color: $crimson;
+    border-color: $crimson;
+    color: #fff;
+  }
+}

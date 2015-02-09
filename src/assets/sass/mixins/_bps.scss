@@ -1,0 +1,5 @@
+@mixin kubwa {
+	@media only screen and (max-width: $width + 40){
+		@content;
+	}
+}

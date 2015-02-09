@@ -1,0 +1,48 @@
+/*
+ * Typography styles
+ */
+
+h1,
+h2,
+h3,
+h4 {
+  color: $crimson;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  @include font-size(38px);
+  text-transform: capitalize;
+}
+h2 {
+  @include font-size(24px);
+}
+h3 {
+  @include font-size(18px);
+}
+h4 {
+  @include font-size(14px);
+}
+
+p,
+ul,
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+  @include font-size(14px);
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 15px;
+  color: $navy;
+  li {
+    list-style-position: inside;
+  }
+}
+
+a {
+  color: $crimson;
+  text-decoration: underline;
+}

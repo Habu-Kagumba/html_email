@@ -1,0 +1,308 @@
+/*
+ * Variables
+ */
+table,
+td,
+div,
+a {
+  box-sizing: border-box;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  outline: none;
+  text-decoration: none;
+  color: #012530;
+  font-weight: bold;
+}
+
+a img {
+  border: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  height: 100% !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important;
+  min-width: 100%;
+}
+
+table {
+  -premailer-width: 100%;
+  border-collapse: separate !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+table td {
+  vertical-align: top;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+table hr {
+  color: #99e6fd;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0;
+}
+
+/*
+ * Typography styles
+ */
+h1,
+h2,
+h3,
+h4 {
+  color: #ff302c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 38px;
+  font-size: 2.375rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+p,
+ul,
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #012530;
+}
+p li,
+ul li,
+ol li {
+  list-style-position: inside;
+}
+
+a {
+  color: #ff302c;
+  text-decoration: underline;
+}
+
+.btn {
+  margin-bottom: 15px;
+  width: auto;
+  -premailer-width: auto;
+}
+.btn td {
+  background-color: #fff;
+  text-align: center;
+}
+.btn a {
+  background-color: #fff;
+  border: solid 1px #ff302c;
+  color: #ff302c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn-primary td {
+  background-color: #ff302c;
+}
+.btn-primary a {
+  background-color: #ff302c;
+  border-color: #ff302c;
+  color: #fff;
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+body {
+  background-color: #cbf2fe;
+}
+
+.body {
+  background-color: #cbf2fe;
+  width: 100%;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important;
+  /* makes it centered */
+  max-width: 580px;
+  padding: 10px;
+  width: auto !important;
+  width: 580px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: 580px;
+  padding: 10px;
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+  background: #fff;
+  border: 1px solid #67d9fc;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.content-block {
+  padding: 0 0 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+}
+.footer * {
+  color: #999;
+  font-size: 12px;
+}
+.footer td {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 620px) {
+  table[class=body] h1,
+  table[class=body] h2,
+  table[class=body] h3,
+  table[class=body] h4 {
+    font-weight: 400 !important;
+  }
+  table[class=body] h1 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  table[class=body] h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  table[class=body] h3 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  table[class=body] .content,
+  table[class=body] .wrapper {
+    padding: 10px !important;
+  }
+  table[class=body] .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  table[class=body] .btn {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
